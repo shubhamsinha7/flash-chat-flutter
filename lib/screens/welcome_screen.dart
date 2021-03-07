@@ -19,12 +19,12 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     // TODO: implement initState
     super.initState();
     Controller = AnimationController(
-      duration: Duration(seconds: 3),
+      duration: Duration(seconds: 1),
       vsync: this,
       upperBound: 1,
     );
     animation =
-        ColorTween(begin: Colors.red, end: Colors.blue).animate(Controller);
+        ColorTween(begin: Colors.white54, end: Colors.white).animate(Controller);
     /*animation=CurvedAnimation(parent: Controller, curve: Curves.decelerate);
     animation.addStatusListener((status) {
       if(status==AnimationStatus.completed){
